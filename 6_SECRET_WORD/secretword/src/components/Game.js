@@ -6,24 +6,29 @@ const Game = ({
   pickedCategory, 
   letters, 
   guessedLetters,
+  wrongletters,
   guesses,
   score,
   }) => {
   return (
     <div className="game">
       <p className="points">
-      <span> Pontuação:  </span>
+      <span> Pontuação: {score} </span>
       </p>
       <h1>
         Advinhe a palavra
       </h1>
       <h3 className="tip">
-        Dica sobre a palavra: <span>Dica...</span>
+        Dica sobre a palavra: <span>{pickedCategory}</span>
       </h3>
-      <p>Você ainda tem  tentativas(s).</p> 
+      <p>Você ainda tem {guesses} tentativa(s).</p> 
       <div className="wordContainer">
-          <span className="letter">A</span>
-          <span className="blankSquare"></span>
+          {letters.map((letter, i) => (
+            guessedLetters.includes(letter)?(
+              <span key={i} className
+            ) : (
+                <span key={i} className="blankSquare"></span>
+          ))}
       </div>
       <div className="letterContainer">
       <p>tente adivinhar uma letra da palavra:</p>
