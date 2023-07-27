@@ -1,11 +1,11 @@
 import './App.css';
 
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
-const url = "http://localhost:3000/products;"
+const url = "http://localhost:3000/products";
 
 function App() {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([])
 
   // 1 - resgatando dados
   useEffect(() => {
@@ -22,7 +22,6 @@ function App() {
   }, []);
   
 
-
   return (
     <div className="App">
       <h1>Lista de Produtos</h1>
@@ -35,7 +34,7 @@ function App() {
         ))}
       </ul>
     </div>
-  );
+  )
 }
 
 export default App;
