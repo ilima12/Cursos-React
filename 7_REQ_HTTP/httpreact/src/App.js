@@ -11,7 +11,7 @@ function App() {
   const [price, setPrice] = useState("")
 
   // 1 - resgatando dados
-  useEffect(() => {
+ /*  useEffect(() => {
     async function fetchData() {
     
       const res = await fetch(url);
@@ -22,7 +22,7 @@ function App() {
     }
 
     fetchData();
-  }, []);
+  }, []); */
   
   // 2 - add de produtos
   const handleSubmit = async (e) => {

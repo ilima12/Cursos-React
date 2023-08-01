@@ -24,6 +24,16 @@
       "name": " teste",
       "price": "12",
       "id": 5
+    },
+    {
+      "name": "teste",
+      "price": "25",
+      "id": 6
+    },
+    {
+      "name": "capa de chuva",
+      "price": "50.50",
+      "id": 7
     }
   ]
 }
